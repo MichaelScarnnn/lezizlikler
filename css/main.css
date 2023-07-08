@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.793);
+  padding: 0;
+  margin: 0;
+  font-family: "Kanit", serif;
+}
+
+.cityInfo {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.793);
+  position: relative;
+  width: 45%;
+  margin-top: 10%;
+  margin-bottom: 1%;
+  top: 13%;
+  left: 52%;
+}
+
+@media screen and (max-width: 700px) {
+  .cityInfo {
+    display: none; 
+  }
+}
+
+.mapDefinitions {
+  text-align: left;
+  display: inline-block;
+  position: fixed;
+  width: 10%;
+  font-size: 65%;
+  font-weight: 1000;
+  bottom: 15%;
+  left: 5%;
+}
+
+@media screen and (max-width: 700px) {
+  .mapDefinitions {
+    display: none; 
+  }
+}
+
+.svg-turkiye-haritasi {
+  position: fixed;
+  width: 50%;
+  top: 15%;
+  left: 2%;
+}
+
+@media screen and (max-width: 700px) {
+  .svg-turkiye-haritasi {
+    display: none; 
+  }
+}
+
+.svg-turkiye-haritasi svg {
+  width: 100%;
+  height: auto;
+}
+
+.il-isimleri {
+  position: absolute;
+  z-index: 2;
+}
+
+@media screen and (max-width: 700px) {
+  .il-isimleri {
+    display: none; 
+  }
+}
+
+.il-isimleri div {
+  font-size: 100%;
+  font-weight: 1000;
+  font-family: 'Kanit', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  display: inline-block;
+  background: #f5f5f7;
+  color: #233949;
+  padding: 5px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.state {
+  cursor: pointer;
+  fill: #193549;
+}
+
+.state.on {
+  cursor: pointer;
+  fill: #33fa41;
+  transition: all 0.7s ease;
+}
+
+#svg-turkiye-haritasi path:hover {
+  fill: #52acf1;
+}
+
+#guney-kibris {
+  pointer-events: none;
+}
+
+.footer {
+  font-family:'Kanit', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 70%;
+  color: #1c1c1c;
+  position: fixed;
+  bottom: 2%;
+  left: 23%;
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    display: none; 
+  }
+}
+
+.container {
+    margin-top: 3%;
+    background-color: rgba(255, 255, 255, 0.793);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.item {
+    background-color: rgba(255, 255, 255, 0.793);
+    width: 14rem;
+    height: auto;
+    margin: 1%;
+    display: grid;
+    align-items: center;
+    border-radius: 1%;
+ }
+
+ .shortDesc {
+    font-family: 'Kanit', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    align-items: center;
+    text-indent: 30px;
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+ }
+
+ a:link {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #406887;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.foodImg {
+  border: 1px solid black;
+  border-radius: 25%;
+  margin-top: 2.5%;
+}
+
+.transform{
+  transition: all 2s ease;
+}
+
+.transform-active{
+  background-color: #45cee0;
+  height: 200px;
+  width: 200px;
+}
+
+.siteLogo  {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.793);
+  position: absolute;
+  width: 40%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  left: 53%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 700px) {
+  .siteLogo {
+    display: none; 
+  }
+}
+
+.contactInfo {
+    text-align: left;
+    display: inline-block;
+    position: fixed;
+    width: 10%;
+    bottom: 15%;
+    left: 40%;
+}
+
+.contactInfo img {
+  margin: 3%;
+}
+
+@media screen and (max-width: 700px) {
+  .contactInfo {
+    display: none; 
+  }
+}
