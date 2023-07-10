@@ -4,13 +4,13 @@
 
 # Resources
 
-- Projeye kullanılan Türkiye haritası -> `https://github.com/dnomak/svg-turkiye-haritasi` .
+- Projede kullanılan Türkiye haritası için -> `https://github.com/dnomak/svg-turkiye-haritasi`.
 
 # For running
 
 - Cloning the repository the local machine<br>
 `git clone https://github.com/MichaelScarnnn/lezizlikler`
 
-#### TODO
+## TO DO
 
 - [ ] Map definitions gıda seçimine göre filtreleme
